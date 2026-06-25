@@ -1,0 +1,30 @@
+[22:04:24] Dados reais carregados: L = [8, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28, 30, 32, 34, 36, 38, 40, 42, 44, 46, 48, 50, 52, 54, 56, 58, 60, 62, 64, 66, 68, 70, 72, 74, 76, 78, 80, 82]
+[22:04:24] L_TARGET=4096, BATCH=4, DL=2, LNF_START=0.001, DRY_RUN=False
+[22:04:24] ------------------------------------------------------------
+[22:04:24] 
+=== Iteração 0 | L_max=82 → batch [84, 86, 88, 90] ===
+[22:04:24]   Ajustando FSS com 38 L's...
+[22:04:24]   Resíduo FSS em L=82: RMSE=2.528e-04, max=1.615e-03
+[22:04:24] 
+  → L=84
+[22:04:24]   Rodando WL: /home/apfurlan/Projects/WangLandau-GaussianProcess-Extrapolation/Ising/wl_warmstart 84 0.001 /home/apfurlan/Projects/WangLandau-GaussianProcess-Extrapolation/out/bootstrap/warmstart_L84.txt
+[22:21:20] Dados reais carregados: L = [8, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28, 30, 32, 34, 36, 38, 40, 42, 44, 46, 48, 50, 52, 54, 56, 58, 60, 62, 64, 66, 68, 70, 72, 74, 76, 78, 80, 82]
+[22:21:20] L_TARGET=126, BATCH=4, DL=2, LNF_START=0.001, DRY_RUN=False
+[22:21:20] ------------------------------------------------------------
+[22:21:20] 
+=== Iteração 0 | L_max=82 → batch [84, 86, 88, 90] ===
+[22:21:20]   Ajustando FSS com 38 L's...
+[22:21:20]   Resíduo FSS em L=82: RMSE=2.528e-04, max=1.615e-03
+[22:21:20] 
+  → L=84
+[22:21:20]   Rodando WL: /home/apfurlan/Projects/WangLandau-GaussianProcess-Extrapolation/Ising/wl_warmstart 84 0.001 /home/apfurlan/Projects/WangLandau-GaussianProcess-Extrapolation/out/bootstrap/warmstart_L84.txt
+[22:24:17] Dados reais carregados: L = [8, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28, 30, 32, 34, 36, 38, 40, 42, 44, 46, 48, 50, 52, 54, 56, 58, 60, 62, 64, 66, 68, 70, 72, 74, 76, 78, 80, 82]
+[22:24:17] L_TARGET=128, BATCH=4, DL=2, LNF_START=0.001, DRY_RUN=False
+[22:24:17] ------------------------------------------------------------
+[22:24:17] 
+=== Iteração 0 | L_max=82 → batch [84, 86, 88, 90] ===
+[22:24:17]   Ajustando FSS com 38 L's...
+[22:24:17]   Resíduo FSS em L=82: RMSE=2.528e-04, max=1.615e-03
+[22:24:17] 
+  → L=84
+[22:24:17]   Rodando WL: /home/apfurlan/Projects/WangLandau-GaussianProcess-Extrapolation/Ising/wl_warmstart 84 0.001 /home/apfurlan/Projects/WangLandau-GaussianProcess-Extrapolation/out/bootstrap/warmstart_L84.txt
