@@ -1,0 +1,43 @@
+[23:03:01] Dados reais: L = [8, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28, 30, 32, 34, 36, 38, 40, 42, 44, 46, 48, 50, 52, 54, 56, 58, 60, 62, 64, 66, 68, 70, 72, 74, 76, 78, 80, 82]
+[23:03:01] L_TARGET=256, LNF_START=0.001, DRY_RUN=True
+[23:03:01] ------------------------------------------------------------
+[23:03:01] 
+=== Iteração 0 | L_max=82 → L_new=124 (ratio=1.51×) ===
+[23:03:01]   Ajustando GP...
+[23:03:01]   GP treino: 30 L's, 1199 pontos
+[23:05:21]   Kernel: 7.34**2 * Matern(length_scale=[9.56, 2.06], nu=1.5) + WhiteKernel(noise_level=4.4e-09)
+[23:05:21]   GP ajustado em 139.7s
+[23:05:21]   GP std médio (por sítio) = 6.326e-04
+[23:05:21]   GP std max  (por sítio)  = 9.205e-04
+[23:05:21]   Warm-start: warmstart_L124.txt
+[23:05:22]   Plot: gp_iter000_L124.png
+[23:05:22]   [dry-run] Usando predição GP como dado para L=124
+[23:05:22] 
+=== Iteração 1 | L_max=124 → L_new=186 (ratio=1.50×) ===
+[23:05:22]   Ajustando GP...
+[23:05:22]   GP treino: 30 L's, 1199 pontos
+[23:07:22]   Kernel: 5.03**2 * Matern(length_scale=[6.5, 1.72], nu=1.5) + WhiteKernel(noise_level=1.19e-08)
+[23:07:22]   GP ajustado em 119.9s
+[23:07:22]   GP std médio (por sítio) = 6.749e-04
+[23:07:22]   GP std max  (por sítio)  = 1.108e-03
+[23:07:22]   Warm-start: warmstart_L186.txt
+[23:07:22]   Plot: gp_iter001_L186.png
+[23:07:22]   [dry-run] Usando predição GP como dado para L=186
+[23:07:22] 
+=== Iteração 2 | L_max=186 → L_new=256 (ratio=1.38×) ===
+[23:07:22]   Ajustando GP...
+[23:07:22]   GP treino: 30 L's, 1199 pontos
+[23:09:28]   Kernel: 5.64**2 * Matern(length_scale=[7.26, 2.06], nu=1.5) + WhiteKernel(noise_level=6.31e-09)
+[23:09:28]   GP ajustado em 125.9s
+[23:09:28]   GP std médio (por sítio) = 5.915e-04
+[23:09:28]   GP std max  (por sítio)  = 1.019e-03
+[23:09:28]   Warm-start: warmstart_L256.txt
+[23:09:28]   Plot: gp_iter002_L256.png
+[23:09:28]   [dry-run] Usando predição GP como dado para L=256
+[23:09:28] 
+============================================================
+[23:09:28] Loop concluído. L's disponíveis: [8, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28, 30, 32, 34, 36, 38, 40, 42, 44, 46, 48, 50, 52, 54, 56, 58, 60, 62, 64, 66, 68, 70, 72, 74, 76, 78, 80, 82, 124, 186, 256]
+[23:09:28] Saída em: ../out/gp_loop
+[23:09:28] 
+Para rodar WL no L final com warm-start gerado:
+[23:09:28]   ../Ising/wl_warmstart 256 0.001 /home/apfurlan/Projects/WangLandau-GaussianProcess-Extrapolation/out/gp_loop/warmstart_L256.txt
